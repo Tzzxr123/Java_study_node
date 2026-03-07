@@ -501,3 +501,44 @@ System.out.println(c3):
 ![image-20250902164234759](./Java 开发笔记.assets/image-20250902164234759.png)
 
 2.AOP切面思想：代理就可以使用到这种思想，在代理中可以在被代理类方法执行前后各插入一段代码，这就是AOP思想。
+
+# 面试：
+
+## ArrayList：
+
+### 原理：
+
+![image-20260307105202573](./JavaSE基础.assets/image-20260307105202573.png)
+
+### 与数组转换
+
+<img src="./JavaSE基础.assets/image-20260307105609299.png" alt="image-20260307105609299" style="zoom:50%;" />
+
+### 与LinkList：
+
+<img src="./JavaSE基础.assets/image-20260307110051192.png" alt="image-20260307110051192" style="zoom:33%;" />
+
+## HashMap：
+
+### 原理：
+
+![image-20260307111858247](./JavaSE基础.assets/image-20260307111858247.png)
+
+![image-20260307112311098](./JavaSE基础.assets/image-20260307112311098.png)
+
+### Put流程：
+
+![image-20260307113456543](./JavaSE基础.assets/image-20260307113456543.png)
+
+![image-20260307113623259](./JavaSE基础.assets/image-20260307113623259.png)
+
+### 扩容机制：
+
+**什么情况下扩容：**
+
+1. `hashmap中存入值超过扩容阈值（当前大小*0.75）。`
+2. `链表长度大于8，并且hashmap长度小于64会先扩容到64而不是转化为红黑树。`
+
+![1ef4c15c-e5e8-4982-96b3-c624697a5096](./JavaSE基础.assets/1ef4c15c-e5e8-4982-96b3-c624697a5096.png)
+
+![image-20260307114307395](./JavaSE基础.assets/image-20260307114307395.png)
